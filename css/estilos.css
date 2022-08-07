@@ -1,58 +1,78 @@
-
 :root {
     --main-rose-color : #f777a8;
     --main-red-color  : #ff0000;
     --main-black-color: #000000;
     --main-wite-color : #ffffff;
-    --main-email-color:#fa5c07;
-
-
+    --main-email-color: #fa5c07;
 }
-*{
-    margin: 0;
+
+* {
+    margin : 0;
     padding: 0;
 }
+
+.head {
+    display    : flex;
+    align-items: center;
+    font-family: 'Reenie Beanie',
+        cursive;
+
+}
+
+.head a {
+    color    : var(--main-wite-color);
+    font-size: 25px;
+}
+
 body {
     /* background-color:var(--main-rose-color); */
     background-image: url(../images/playa01.jpg);
-    background-size: 100% 110%;
+    background-size : 100% 110%;
     font-family     : 'Ubuntu Condensed',
         sans-serif;
-    }
-.logo{
-    width: 300px;
+}
+
+.logo {
+    width : 300px;
     height: 300px;
-    margin:auto;
+    margin: auto;
 }
 
 .leyenda {
     text-align: center;
     font-family: 'Reenie Beanie',
-cursive;
-font-size: 50px;
-color:var(--main-wite-color)
+        cursive;
+    font-size: 50px;
+    color    : var(--main-wite-color)
 }
+
 .container {
-    width  : 30%;
-    display: flex;
+    width         : 80%;
+    display       : flex;
     flex-direction: column;
-    margin : auto;
+    margin        : auto;
 }
+
 legend {
     font-size  : 25px;
     font-family: fantasy;
 }
+
 .container-suscriber {
     width: 100%;
-}
-.container-suscriber form {
+    display       : flex;
     justify-content: center;
+
+}
+
+.container-suscriber .formulario {
+    width: 60%;
 }
 
 .container-suscriber label {
-    text-align: left;
-    padding   : 5px;
-    font-weight:bold;
+    text-align : left;
+    padding    : 5px;
+    font-weight: bold;
 }
 
 .container-suscriber .input {
@@ -61,10 +81,12 @@ legend {
     height : 25px;
     padding: 5px 15px;
 }
+
 .input:focus {
     border : 2px solid #FF9FB7;
     outline: 2px solid #FF9FB7;
 }
+
 .boton {
     width           : 30%;
     height          : 40px;
@@ -79,14 +101,16 @@ legend {
     color : #FF9FB7;
     border: 3px solid #FF9FB7;
 }
+
 footer {
     background-color: #FFF;
-    text-align: center;
-    padding   : 20px;
-     color : var(--main-email-color);
+    text-align      : center;
+    padding         : 20px;
+    color           : var(--main-email-color);
 }
+
 .email {
     text-decoration: none;
-     color : var(--main-email-color);
+    color          : var(--main-email-color);
     font-family    : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
